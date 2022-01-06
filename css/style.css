@@ -20,16 +20,13 @@ a {
   height: 100vh;
 }
 
-.nav,
-.sub-menu {
+.nav {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.nav {
   background: #ffffff;
   height: 100%;
 }
@@ -50,11 +47,16 @@ a {
 }
 
 .sub-menu {
+  list-style: none;
   border-left: 1px solid black;
   margin-left: 45px;
   overflow: hidden;
-  height: 0;
   transition: all 0.7s;
+  height: 0;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
 }
 
 .nav__link:hover {
